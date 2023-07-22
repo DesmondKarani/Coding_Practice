@@ -19,7 +19,13 @@ int main(void)
 	{
 		printf("You are underage though, you are not qualified!!!\n");
 	}else
+	{
 		printf("You are a mature adult, stop complaining about life nigg...!\n");
 
+		if ((Mwaka % 4) == 0)
+		{
+			printf("shit, btw you were born in a leap year nig!! Wow!\n");
+		}
+	}
 	return 0;
 }
