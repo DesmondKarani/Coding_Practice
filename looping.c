@@ -2,11 +2,11 @@
 int main(void)
 {
 	int i;
-	i = 0;
-	while (i < 10)
+	i = 7;
+	while (i >= 7)
 	{
+		printf("n is in msee");
 		i++;
-		printf("%d ", i / 2);
 	}
 	return 0;
 }
