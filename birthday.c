@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define HiiMwaka 2023
+#define HiiMwaka 2023 // using #define makes it easier to edit variables that are tied to specific life events like new year
 /**
  * main - meant to show age and years to death
  *
