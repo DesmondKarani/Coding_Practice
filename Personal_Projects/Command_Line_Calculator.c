@@ -4,18 +4,17 @@
 
 int main(int argc, char *argv[])
 {
+	if (argc != 4)
+        {
+                printf("This is a simple calculator, you need to enter two operators and an operand\n");
+                return 1;
+        }
 	//Named as floats to accomodate division of improper fractions.
 	//The use of atof functions (supported by stdlib) is to convert arguments to integers.
 	//I have used atof instead of atoi since I am working with floats instead of integers.
 	float i = atof(argv[1]);
 	float j = atof(argv[3]);
 	float k;
-
-	if (argc != 4)
-	{
-		printf("This is a simple calculator, you need to enter two operators and an operand");
-		return 1;
-	}
 	
 	//Here, I am making sure the user only enters these for math use	
 	if (argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != 'x' && argv[2][0] != '*' && argv[2][0] != '/')
