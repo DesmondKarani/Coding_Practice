@@ -18,7 +18,7 @@ int main(void)
 	scanf("%d", &choice);
 
 	printf("\nPlease enter the numbers for the operation: ");
-	scanf("%d %d", &a, &b);
+	scanf("%f %f", &a, &b);
 
 	switch(choice)
 	{
