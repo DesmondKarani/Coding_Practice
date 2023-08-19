@@ -23,23 +23,23 @@ int main(void)
 	switch(choice)
 	{
 		case 0:
-			result = a + b;
+			result = Sum(a, b);
 			break;
 
 		case 1:
-			result = a - b;
+			result = Minus(a, b);
 			break;
 
 		case 2:
-			result = a * b;
+			result = Multiply(a, b);
 			break;
 
 		case 3:
-			result = a / b;
+			result = Div(a, b);
 			break;
 
 		case 4:
-			result = (float)((int)a % (int)b);
+			result = Modulus(a, b);
 			break;
 
 
