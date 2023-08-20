@@ -1,13 +1,25 @@
 #include <stdio.h>
+
+typedef int (*Ged)(int, int);
+
+int multi(int a, int b);
+int div(int a, int b);
+int execute(int a, int b, int (*Pointer)(int, int));
+
 int main(void)
 {
-    int array[3];
-    int i, n;
-    i = 5;
-    n = 3;
+	printf("Multiplying 2 by 2 is %d\n", execute(2, 2, multi));
+}
 
-    array[i] = n;
-
-    printf("The fifth element is %d\n", array[i]);
-    return 0;
+int div(int a, int b)
+{
+	return a / b;
+}
+int multi(int a, int b)
+{
+	return a * b;
+}
+int execute(int a, int b, Ged operator)
+{
+	operator(a, b);
 }
