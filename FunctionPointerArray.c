@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - a program that does simple arithmetic
+ * it uses the power of function pointer.
+ * the function pointer points to an array of functions.
+ */
+
 /* This is a list of prototypes */
 int Addition(int a, int b);
 int Substraction(int a, int b);
